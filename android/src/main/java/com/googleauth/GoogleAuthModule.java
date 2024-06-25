@@ -1,5 +1,6 @@
 package com.googleauth;
 
+import androidx.credentials.PublicKeyCredential;
 import androidx.credentials.exceptions.GetCredentialException;
 import android.os.CancellationSignal;
 
