@@ -1,6 +1,5 @@
 package com.googleauth;
 
-import androidx.credentials.PublicKeyCredential;
 import androidx.credentials.exceptions.GetCredentialException;
 import android.os.CancellationSignal;
 
@@ -18,7 +17,7 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
-import com.google.android.libraries.identity.googleid.GetGoogleIdOption;
+import com.google.android.libraries.identity.googleid.GetSignInWithGoogleOption;
 
 import java.util.concurrent.Executors;
 
@@ -26,13 +25,12 @@ import java.util.concurrent.Executors;
 public class GoogleAuthModule extends ReactContextBaseJavaModule {
   public static final String NAME = "GoogleAuth";
 
-  CredentialManager credentialManager;
+  CredentialManager credentialManager = null;
 
   public GoogleAuthModule(ReactApplicationContext reactContext) {
 
     super(reactContext);
 
-    credentialManager = CredentialManager.create(getCurrentActivity());
 
   }
 
@@ -43,16 +41,11 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void SignInWithGoogle(String clientId, @Nullable String nonce,
-                               boolean filterByAuthorizedAccounts, boolean requestVerifiedPhoneNumber,
-                               boolean autoSelectEnabled, Promise promise) {
-    var googleIdOption = new GetGoogleIdOption.Builder()
-      .setServerClientId(clientId)
-      .setNonce(nonce)
-      .setFilterByAuthorizedAccounts(filterByAuthorizedAccounts)
-      .setRequestVerifiedPhoneNumber(requestVerifiedPhoneNumber)
-      .setAutoSelectEnabled(autoSelectEnabled)
-      .build();
+  public void SignInWithGoogle(String clientId, @Nullable String hostedDomainFilter, String nonce, Promise promise) {
+    if (credentialManager == null) {
+      credentialManager = CredentialManager.create(getCurrentActivity());
+    }
+    var googleIdOption = new GetSignInWithGoogleOption(clientId, hostedDomainFilter, nonce);
 
     GetCredentialRequest request = new GetCredentialRequest.Builder()
       .addCredentialOption(googleIdOption)

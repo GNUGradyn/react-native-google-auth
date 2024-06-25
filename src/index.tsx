@@ -17,6 +17,6 @@ const GoogleAuth = NativeModules.GoogleAuth
       }
     );
 
-export function SignInWithGoogle(clientId: string, nonce: string | null, filterByAuthorizedAccounts: boolean, requestVerifiedPhoneNumber: boolean, autoSelectEnabled: boolean): Promise<any> {
-  return GoogleAuth.SignInWithGoogle(clientId, nonce, filterByAuthorizedAccounts, requestVerifiedPhoneNumber, autoSelectEnabled);
+export function SignInWithGoogle(clientId: string, hostedDomainFilter: string, nonce: string): Promise<any> {
+  return GoogleAuth.SignInWithGoogle(clientId, "", "");
 }
