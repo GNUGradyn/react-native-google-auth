@@ -27,12 +27,10 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule {
   public static final String NAME = "GoogleAuth";
 
   CredentialManager credentialManager;
-  ReactContext context;
 
   public GoogleAuthModule(ReactApplicationContext reactContext) {
 
     super(reactContext);
-    context = reactContext;
 
     credentialManager = CredentialManager.create(getCurrentActivity());
 
@@ -61,7 +59,7 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule {
       .build();
 
     credentialManager.getCredentialAsync(
-      context,
+      getCurrentActivity().getApplicationContext(),
       request,
       new CancellationSignal(),
       Executors.newSingleThreadExecutor(),
