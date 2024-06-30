@@ -7,9 +7,19 @@ Google sign-in for react native
 ```sh
 npm install react-native-google-auth
 ```
+or
+```sh
+yarn add react-native-google-auth
+```
+
+### Android linking
+No additional steps are required to link the libraries on android
+### iOS Linking
+Run `pod install` in the iOS directory of your app to link the libraries
 
 ## Usage
 
+You must 
 ```js
 import { multiply } from 'react-native-google-auth';
 
@@ -29,3 +39,4 @@ MIT
 ---
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+
