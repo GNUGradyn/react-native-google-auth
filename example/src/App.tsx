@@ -3,13 +3,14 @@ import { useState } from 'react';
 import { Button, SafeAreaView, ScrollView, StyleSheet, Text, TextInput } from 'react-native';
 import { AuthorizeWithGoogle, SignInWithGoogle } from 'react-native-google-auth';
 import type { UserInfo } from '../../src/UserInfo';
+import type AuthorizationResult from '../../src/AuthorizationResult';
 
 
 export default function App() {
   const [clientId, setClientId] = useState<string>("");
   const [userInfo, setUserInfo] = useState<UserInfo>({familyName: "", givenName: "", id: "", idToken: ""})
   const [scopes, setScopes] = useState<string>("");
-  const [authorizationResult, setAuthorizationResult] = useState();
+  const [authorizationResult, setAuthorizationResult] = useState<AuthorizationResult>({accessToken: "", serverAuthCode: "", authorizedScopes: []});
 
   return (
     <SafeAreaView>
@@ -28,6 +29,9 @@ export default function App() {
         <Button title='GO' onPress={async () => {
           setAuthorizationResult(await AuthorizeWithGoogle(scopes.split(",").map(x => x.trim())))
         }}/>
+        <Text>access token: {authorizationResult.accessToken}</Text>
+        <Text>server auth code: {authorizationResult.serverAuthCode}</Text>
+        <Text>authorized scopes: {authorizationResult.authorizedScopes.join(",")}</Text>
       </ScrollView>
     </SafeAreaView>
   );
