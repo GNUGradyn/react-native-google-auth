@@ -61,7 +61,7 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule {
       new CredentialManagerCallback<GetCredentialResponse, GetCredentialException>() {
         @Override
         public void onResult(@NonNull GetCredentialResponse result) {
-          promise.resolve(new Gson().toJson(GoogleIdTokenCredential.createFrom(result.getCredential().getData())));
+          promise.resolve(new Gson().toJson(UserInfo.ParseGoogleIdTokenCredential(GoogleIdTokenCredential.createFrom(result.getCredential().getData()))));
         }
         @Override
         public void onError(@NonNull GetCredentialException error) {
