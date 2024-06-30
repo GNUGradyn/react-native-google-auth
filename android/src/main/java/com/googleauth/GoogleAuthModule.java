@@ -19,6 +19,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import com.google.android.libraries.identity.googleid.GetSignInWithGoogleOption;
 import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential;
+import com.google.gson.Gson;
 
 import java.util.concurrent.Executors;
 
@@ -60,7 +61,7 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule {
       new CredentialManagerCallback<GetCredentialResponse, GetCredentialException>() {
         @Override
         public void onResult(@NonNull GetCredentialResponse result) {
-          promise.resolve(new Gson().toJson(GoogleIdTokenCredential.createFrom(result.getCredential().getData()));
+          promise.resolve(new Gson().toJson(GoogleIdTokenCredential.createFrom(result.getCredential().getData())));
         }
         @Override
         public void onError(@NonNull GetCredentialException error) {
