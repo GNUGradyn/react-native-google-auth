@@ -26,7 +26,12 @@ To get started, we need to create a project in the [Google Cloud Console](https:
 
 Next up, navigate to the "APIs & Services" Menu using either the search bar or the quick access menu
 
+
 ![Step 3](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/3.png?raw=true)
+
+
+Next, select the "Credentials" menu from the slidebar
+![Step 4](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/4.png?raw=true)
 ## Usage
 
 
