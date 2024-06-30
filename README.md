@@ -31,6 +31,8 @@ Next up, navigate to the "APIs & Services" Menu using either the search bar or t
 
 
 Next, select the "Credentials" menu from the slidebar
+
+
 ![Step 4](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/4.png?raw=true)
 ## Usage
 
