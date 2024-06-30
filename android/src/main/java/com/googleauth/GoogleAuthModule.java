@@ -27,13 +27,11 @@ import java.util.concurrent.Executors;
 public class GoogleAuthModule extends ReactContextBaseJavaModule {
   public static final String NAME = "GoogleAuth";
 
-  CredentialManager credentialManager = null;
+  private CredentialManager credentialManager = null;
+  private Promise signInPromise;
 
   public GoogleAuthModule(ReactApplicationContext reactContext) {
-
     super(reactContext);
-
-
   }
 
   @Override
@@ -44,10 +42,13 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void SignInWithGoogle(String clientId, @Nullable String hostedDomainFilter, String nonce, Promise promise) {
+    signInPromise = promise;
+
     if (credentialManager == null) {
       credentialManager = CredentialManager.create(getCurrentActivity());
     }
-    var googleIdOption = new GetSignInWithGoogleOption(clientId, hostedDomainFilter, nonce);
+
+    GetSignInWithGoogleOption googleIdOption = new GetSignInWithGoogleOption(clientId, hostedDomainFilter, nonce);
 
     GetCredentialRequest request = new GetCredentialRequest.Builder()
       .addCredentialOption(googleIdOption)
@@ -61,13 +62,14 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule {
       new CredentialManagerCallback<GetCredentialResponse, GetCredentialException>() {
         @Override
         public void onResult(@NonNull GetCredentialResponse result) {
-          promise.resolve(new Gson().toJson(UserInfo.ParseGoogleIdTokenCredential(GoogleIdTokenCredential.createFrom(result.getCredential().getData()))));
+          GoogleIdTokenCredential googleIdTokenCredential = GoogleIdTokenCredential.createFrom(result.getCredential().getData());
+          signInPromise.resolve(UserInfo.ParseGoogleIdTokenCredential(googleIdTokenCredential));
         }
+
         @Override
         public void onError(@NonNull GetCredentialException error) {
-          promise.reject(error);
+          signInPromise.reject(error);
         }
-      }
-      );
+      });
   }
 }
