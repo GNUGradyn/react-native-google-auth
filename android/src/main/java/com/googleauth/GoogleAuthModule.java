@@ -63,7 +63,7 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule {
         @Override
         public void onResult(@NonNull GetCredentialResponse result) {
           GoogleIdTokenCredential googleIdTokenCredential = GoogleIdTokenCredential.createFrom(result.getCredential().getData());
-          signInPromise.resolve(UserInfo.ParseGoogleIdTokenCredential(googleIdTokenCredential));
+          signInPromise.resolve(new Gson().toJson(UserInfo.ParseGoogleIdTokenCredential(googleIdTokenCredential)));
         }
 
         @Override
