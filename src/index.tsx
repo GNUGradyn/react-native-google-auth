@@ -18,5 +18,5 @@ const GoogleAuth = NativeModules.GoogleAuth
     );
 
 export function SignInWithGoogle(clientId: string, hostedDomainFilter: string, nonce: string): Promise<any> {
-  return GoogleAuth.SignInWithGoogle(clientId, "", "");
+  return GoogleAuth.SignInWithGoogle(clientId, hostedDomainFilter, nonce);
 }
