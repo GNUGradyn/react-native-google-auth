@@ -1,4 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
+import type { UserInfo } from './UserInfo';
 
 const LINKING_ERROR =
   `The package 'react-native-google-auth' doesn't seem to be linked. Make sure: \n\n` +
@@ -17,6 +18,11 @@ const GoogleAuth = NativeModules.GoogleAuth
       }
     );
 
-export function SignInWithGoogle(clientId: string, hostedDomainFilter: string, nonce: string): Promise<any> {
-  return GoogleAuth.SignInWithGoogle(clientId, hostedDomainFilter, nonce);
+export const SignInWithGoogle = async (clientId: string, hostedDomainFilter: string, nonce: string): Promise<any> =>  {
+  try {
+    const userInfo: UserInfo = await GoogleAuth.SignInWithGoogle(clientId, hostedDomainFilter, nonce);
+    return userInfo;
+} catch (error: any) {
+    throw new Error('Failed to get user info: ' + error.message);
+}
 }
