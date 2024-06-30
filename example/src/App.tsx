@@ -12,7 +12,7 @@ export default function App() {
       <Text>SignInWithGoogle</Text>
       <TextInput placeholder='clientId' value={clientId} onChangeText={setClientId}/>
       <Button title="GO" onPress={()=>{
-        SignInWithGoogle(clientId, null, true, false, false);
+        SignInWithGoogle(clientId, "", "");
       }}/>
     </SafeAreaView>
   );
