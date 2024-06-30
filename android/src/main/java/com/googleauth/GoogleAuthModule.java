@@ -24,6 +24,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.module.annotations.ReactModule;
 import com.google.android.gms.auth.api.identity.AuthorizationRequest;
 import com.google.android.gms.auth.api.identity.AuthorizationResult;
@@ -88,9 +89,9 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule implements Acti
   }
 
   @ReactMethod
-  public void AuthorizeWithGoogle(String[] scopes, Promise promise) {
+  public void AuthorizeWithGoogle(ReadableArray scopes, Promise promise) {
     authorizationPromise = promise;
-    AuthorizationRequest authorizationRequest = AuthorizationRequest.builder().setRequestedScopes(Arrays.stream(scopes).map(x -> new Scope(x)).toList()).build();
+    AuthorizationRequest authorizationRequest = AuthorizationRequest.builder().setRequestedScopes(scopes.toArrayList().stream().map(x -> new Scope((String) x)).toList()).build();
     Identity.getAuthorizationClient(getCurrentActivity())
       .authorize(authorizationRequest)
       .addOnSuccessListener(
@@ -104,7 +105,7 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule implements Acti
               promise.reject("Failed to authorize with google", e);
             }
           } else {
-            promise.resolve(authorizationResult);
+            promise.resolve(new Gson().toJson(com.googleauth.AuthorizationResult.fromGoogleAuthorizationResult(authorizationResult)));
           }
         })
       .addOnFailureListener(e -> promise.reject("Failed to authorize with google", e));
@@ -116,7 +117,7 @@ public class GoogleAuthModule extends ReactContextBaseJavaModule implements Acti
     if (requestCode == REQUEST_AUTHORIZE) {
       try {
         AuthorizationResult authorizationResult = Identity.getAuthorizationClient(getCurrentActivity()).getAuthorizationResultFromIntent(data);
-        authorizationPromise.resolve(authorizationResult);
+        authorizationPromise.resolve(new Gson().toJson(com.googleauth.AuthorizationResult.fromGoogleAuthorizationResult(authorizationResult)));
       } catch (ApiException e) {
         authorizationPromise.reject("Failed to authorize with google", e);
       }
