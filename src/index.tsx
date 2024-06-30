@@ -18,10 +18,10 @@ const GoogleAuth = NativeModules.GoogleAuth
       }
     );
 
-export const SignInWithGoogle = async (clientId: string, hostedDomainFilter: string, nonce: string): Promise<any> =>  {
+export const SignInWithGoogle = async (clientId: string, hostedDomainFilter: string, nonce: string): Promise<UserInfo> =>  {
   try {
-    const userInfo: UserInfo = await GoogleAuth.SignInWithGoogle(clientId, hostedDomainFilter, nonce);
-    return userInfo;
+    const userInfo: string = await GoogleAuth.SignInWithGoogle(clientId, hostedDomainFilter, nonce);
+    return JSON.parse(userInfo);
 } catch (error: any) {
     throw new Error('Failed to get user info: ' + error.message);
 }
