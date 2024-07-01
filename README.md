@@ -30,14 +30,18 @@ Next up, navigate to the "APIs & Services" Menu using either the search bar or t
 ![Step 3](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/3.png?raw=true)
 
 
-Next, select the "Credentials" menu from the slidebar
+Next, select the "Oauth consent screen" menu from the slidebar
+
+![Step 4](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/6.png?raw=true)
 
 
-![Step 4](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/4.png?raw=true)
+Select "External" as the user type and click Create
+
+![Step 5](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/7.png?raw=true)
 
 Click "Create Credentials" inm the top menu and select "OAuth client ID"
 
-![Step 5](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/5.png?raw=true)
+![Step 6](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/5.png?raw=true)
 ## Usage
 
 
