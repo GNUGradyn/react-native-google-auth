@@ -39,6 +39,10 @@ Select "External" as the user type and click Create
 
 ![Step 5](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/7.png?raw=true)
 
+Enter the name of your app for the app name. Select an email where users can contact you in the "User support email" dropdown. You can optionally upload an app logo for the consent screen, but this will require you to keep your app in internal mode until it is approved by google. If your application has a home page, privacy policy, or TOS, you can enter those here for them to be shown on the consent screen. Add a developer contact email address and press "Save and continue"
+
+![Step 7](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/8.png?raw=true)
+
 Click "Create Credentials" inm the top menu and select "OAuth client ID"
 
 ![Step 6](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/5.png?raw=true)
