@@ -87,6 +87,15 @@ If you get a pop-up labeled "OAuth client created", dismiss it with the ok butto
 Back in xCode, open the "Info" file from the file explorer on the left. Hover over the right side of the name of the bottom key and click the plus button. Enter GIDClientID as the key. Set the type to String. Enter the iOS client ID from the google cloud console as the value.
 
 ![Step 14](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/13.png?raw=true)
+
+Back in the Google Cloud Console, click your iOS client ID and copy the "iOS URL scheme" under Additional information
+
+![Step 15](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/14.png?raw=true)
+
+Back in xCode in the Info file again, click the + next to GIDClientID. Choose URL Types from the dropdown. Expand this item, expand item 0, and change the URL identifier to the value you copied earlier. Check for trailing whitespace around this value and remove it.
+
+![Step 16](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/15.png?raw=true)
+
 ## Usage
 
 To sign in with google and receive a [UserInfo](https://github.com/GNUGradyn/react-native-google-auth/blob/main/src/UserInfo.ts) object, simply
