@@ -52,7 +52,7 @@ Click "Create Credentials" in the top menu and select "OAuth client ID"
 
 ![Step 8](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/5.png?raw=true)
 
-Set the application type to "Web Application". **YOU MUST CHOOSE WEB APPLICATION EVEN IF YOU ARE MAKING AN ANDROID AND/OR IOS APP.**. The Android/iOS clients will come later.
+Set the application type to "Web Application". **YOU MUST CHOOSE WEB APPLICATION EVEN IF YOU ARE MAKING AN ANDROID AND/OR IOS APP.** The Android/iOS clients will come later. You can change the name if you wish. Click Create. If you get a pop-up after the following screen with credentials, just click Ok.
 
 ![Step 9](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/9.png?raw=true)
 ## Usage
