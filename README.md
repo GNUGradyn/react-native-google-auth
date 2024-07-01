@@ -68,7 +68,7 @@ This time, Select "Android" as the Application Type. Set the Package Name field 
 Next, run the following command from the root of the React Native project to get the SHA1 certificate fingerprint. `keytool -keystore android/app/debug.keystore -list -alias androiddebugkey -storepass android -keypass android -v` It will be after the word `SHA-1`. Finally, click create. Repeat this process with any additional keystores such as your production keystore.
 
 ![Step 11](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/10.png?raw=true)
-## iOS Setup
+### iOS configuration
 Skip this section if you do not intend to support iOS
 
 Click "Create Credentials" in the top menu and select "OAuth client ID"
