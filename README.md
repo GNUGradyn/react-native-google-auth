@@ -61,13 +61,26 @@ Skip this section if you do not intend to support Android.
 
 Click "Create Credentials" in the top menu and select "OAuth client ID"
 
-![Step 8](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/5.png?raw=true)
+![Step 10](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/5.png?raw=true)
 
 This time, Select "Android" as the Application Type. Set the Package Name field to the package name for your app. If you're unsure what this is, navigate to android/app/src/main/java/(follow the directory tree up until you see files)/MainActivity.(kt/java). The package name will be at the top after the word "package".
 
 Next, run the following command from the root of the React Native project to get the SHA1 certificate fingerprint. `keytool -keystore android/app/debug.keystore -list -alias androiddebugkey -storepass android -keypass android -v` It will be after the word `SHA-1`. Finally, click create. Repeat this process with any additional keystores such as your production keystore.
 
-![Step 9](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/10.png?raw=true)
+![Step 11](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/10.png?raw=true)
+## iOS Setup
+Skip this section if you do not intend to support iOS
+
+Click "Create Credentials" in the top menu and select "OAuth client ID"
+
+![Step 12](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/5.png?raw=true)
+
+This time, Select "iOS" as the Application Type. Change the Name if you like. Set the Bundle ID to your apps bundle ID. You can find this by opening the ios/(app name).xcodeproj file in xcode and double clicking the name of your project in the file browser on the left, choosing the first target, going to the general tab, and checking under "Identity". Fill out the App store ID if you have one and optionally fill out the Team ID 
+
+![Step 13](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/11.png?raw=true)
+
+
+![Step 14](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/12.png?raw=true)
 ## Usage
 
 To sign in with google and receive a [UserInfo](https://github.com/GNUGradyn/react-native-google-auth/blob/main/src/UserInfo.ts) object, simply
