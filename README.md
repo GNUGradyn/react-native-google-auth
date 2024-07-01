@@ -75,12 +75,18 @@ Click "Create Credentials" in the top menu and select "OAuth client ID"
 
 ![Step 12](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/5.png?raw=true)
 
-This time, Select "iOS" as the Application Type. Change the Name if you like. Set the Bundle ID to your apps bundle ID. You can find this by opening the ios/(app name).xcodeproj file in xcode and double clicking the name of your project in the file browser on the left, choosing the first target, going to the general tab, and checking under "Identity". Fill out the App store ID if you have one and optionally fill out the Team ID 
+This time, Select "iOS" as the Application Type. Change the Name if you like. Set the Bundle ID to your apps bundle ID. You can find this by opening the ios/(app name).xcodeproj file in xcode and double clicking the name of your project in the file browser on the left, choosing the first target, going to the general tab, and checking under "Identity". Fill out the App store ID if you have one and optionally fill out the Team ID. Click Create.
 
 ![Step 13](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/11.png?raw=true)
 
 
 ![Step 14](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/12.png?raw=true)
+
+If you get a pop-up labeled "OAuth client created", dismiss it with the ok button.
+
+Back in xCode, open the "Info" file from the file explorer on the left. Hover over the right side of the name of the bottom key and click the plus button. Enter GIDClientID as the key. Set the type to String. Enter the iOS client ID from the google cloud console as the value.
+
+![Step 14](https://github.com/GNUGradyn/react-native-google-auth/blob/main/img/13.png?raw=true)
 ## Usage
 
 To sign in with google and receive a [UserInfo](https://github.com/GNUGradyn/react-native-google-auth/blob/main/src/UserInfo.ts) object, simply
