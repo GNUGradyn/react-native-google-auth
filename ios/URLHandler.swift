@@ -18,7 +18,7 @@ class UrlHandler: NSObject, RCTBridgeModule {
 
   @objc(handleOpenUrl:withResolver:withRejecter:)
   func handleOpenUrl(url: URL, resolve: @escaping RCTPromiseResolveBlock, reject: @escaping RCTPromiseRejectBlock) {
-    let handled = GIDSignIn.sharedInstance.handle(url) { user, error in
+    GIDSignIn.sharedInstance.handle(url) { user, error in
       if let error = error {
         reject("URL_ERROR", "Failed to handle URL: \(error.localizedDescription)", error)
         return
@@ -46,10 +46,6 @@ class UrlHandler: NSObject, RCTBridgeModule {
       } catch {
         reject("JSON_ERROR", "Failed to serialize user info: \(error.localizedDescription)", error)
       }
-    }
-    
-    if !handled {
-      reject("URL_ERROR", "URL not handled by Google Sign-In", nil)
     }
   }
 }
