@@ -14,12 +14,16 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => min_ios_version_supported }
   s.source       = { :git => "https://github.com/GNUGradyn/react-native-google-auth.git", :tag => "#{s.version}" }
 
-  s.source_files = "ios/**/*.{h,m,mm,swift}", "GoogleSignIn-iOS/GoogleSignIn/Sources/**/*.{h,m,mm,swift}", "GoogleSignIn-iOS/GoogleSignInSwift/Sources/**/*.{h,m,mm,swift}"
+  s.source_files = "ios/**/*.{h,m,mm,swift}", "GoogleSignIn-iOS/GoogleSignIn/Sources/**/*.{h,m,mm,swift}"
 
-  # dependencies for GoogleSignIn pod. will be replaced when the fork we use is merged into googles repo
-  s.dependency 'AppCheckCore', '>= 10.19.1', '< 11.0' do |ds|
-    ds.modular_headers = true
-  end
+  s.public_header_files = "GoogleSignIn-iOS/GoogleSignIn/Sources/Public/GoogleSignIn/*.h"
+  s.resource_bundle = {
+    'GoogleSignIn' => ['GoogleSignIn-iOS/GoogleSignIn/Sources/{Resources,Strings}/*']
+  }
+
+  # dependencies for GoogleSignIn pod. will be replaced when the fork we use is merged into Google's repo
+  s.dependency 'AppCheckCore', '>= 10.19.1', '< 11.0'
+
   s.dependency 'AppAuth', '>= 1.7.3', '< 2.0'
   s.dependency 'GTMAppAuth', '>= 4.1.1', '< 5.0'
   s.dependency 'GTMSessionFetcher/Core', '~> 3.3'
@@ -30,8 +34,7 @@ Pod::Spec.new do |s|
     install_modules_dependencies(s)
   else
     s.dependency "React-Core"
-    
-    
+
     # Don't install the dependencies when we run `pod install` in the old architecture.
     if ENV['RCT_NEW_ARCH_ENABLED'] == '1' then
       s.compiler_flags = folly_compiler_flags + " -DRCT_NEW_ARCH_ENABLED=1"

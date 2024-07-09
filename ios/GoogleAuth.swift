@@ -1,5 +1,4 @@
 import Foundation
-import GoogleSignIn
 import React
 
 @objc(GoogleAuth)
@@ -16,7 +15,7 @@ class GoogleAuth: NSObject {
         
         let signInConfig = GIDConfiguration(clientID: clientID, serverClientID: nil, hostedDomain: hostedDomainFilter, openIDRealm: nil)
         GIDSignIn.sharedInstance.configuration = signInConfig
-        GIDSignIn.sharedInstance.signIn(withPresenting: presentingVC, hint: nil, additionalScopes: nil, nonce: <#T##String?#>)
+        GIDSignIn.sharedInstance.signIn(withPresenting: presentingVC, hint: nil, additionalScopes: nil, nonce: nonce)
     }
     
     private func getCurrentViewController() -> UIViewController? {
