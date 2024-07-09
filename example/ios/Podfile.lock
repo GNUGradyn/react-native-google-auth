@@ -14,10 +14,6 @@ PODS:
   - FBLazyVector (0.74.2)
   - fmt (9.1.0)
   - glog (0.3.5)
-  - GoogleSignIn (7.1.0):
-    - AppAuth (< 2.0, >= 1.7.3)
-    - GTMAppAuth (< 5.0, >= 4.1.1)
-    - GTMSessionFetcher/Core (~> 3.3)
   - GoogleUtilities/Environment (7.13.3):
     - GoogleUtilities/Privacy
     - PromisesObjC (< 3.0, >= 1.2)
@@ -1222,12 +1218,15 @@ PODS:
   - Yoga (0.0.0)
 
 DEPENDENCIES:
+  - AppAuth (< 2.0, >= 1.7.3)
+  - AppCheckCore (< 11.0, >= 10.19.1)
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - fmt (from `../node_modules/react-native/third-party-podspecs/fmt.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - GoogleSignIn
+  - GTMAppAuth (< 5.0, >= 4.1.1)
+  - GTMSessionFetcher/Core (~> 3.3)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCT-Folly/Fabric (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
@@ -1285,7 +1284,6 @@ SPEC REPOS:
   trunk:
     - AppAuth
     - AppCheckCore
-    - GoogleSignIn
     - GoogleUtilities
     - GTMAppAuth
     - GTMSessionFetcher
@@ -1413,7 +1411,6 @@ SPEC CHECKSUMS:
   FBLazyVector: 4bc164e5b5e6cfc288d2b5ff28643ea15fa1a589
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
   glog: fdfdfe5479092de0c4bdbebedd9056951f092c4f
-  GoogleSignIn: d4281ab6cf21542b1cfaff85c191f230b399d2db
   GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
   GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
@@ -1443,7 +1440,7 @@ SPEC CHECKSUMS:
   React-jsitracing: 0fa7f78d8fdda794667cb2e6f19c874c1cf31d7e
   React-logger: 29fa3e048f5f67fe396bc08af7606426d9bd7b5d
   React-Mapbuffer: bf56147c9775491e53122a94c423ac201417e326
-  react-native-google-auth: e757e7dc14905612cf3628307c94622ae04d251b
+  react-native-google-auth: 0e0d211e08a3dda76f60abc940b1abb670f53269
   React-nativeconfig: 9f223cd321823afdecf59ed00861ab2d69ee0fc1
   React-NativeModulesApple: ff7efaff7098639db5631236cfd91d60abff04c0
   React-perflogger: 32ed45d9cee02cf6639acae34251590dccd30994
@@ -1470,6 +1467,6 @@ SPEC CHECKSUMS:
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: ae3c32c514802d30f687a04a6a35b348506d411f
 
-PODFILE CHECKSUM: b654db284de3a4fe9c7c0442369f5555afa2e50f
+PODFILE CHECKSUM: 39631cf5d748bf34ee7d13f58bbc5af907f97f6c
 
 COCOAPODS: 1.15.2

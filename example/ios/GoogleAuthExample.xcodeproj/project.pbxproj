@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* GoogleAuthExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* GoogleAuthExampleTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-GoogleAuthExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-GoogleAuthExample.a */; };
+		03833D7C2844F2B179BD7EAE /* libPods-GoogleAuthExample-GoogleAuthExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5F32D5917DCD3C18574D02 /* libPods-GoogleAuthExample-GoogleAuthExampleTests.a */; };
 		13A2F6315EFCE58FD781D7FF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2BBBD6202B7140534D116DCC /* PrivacyInfo.xcprivacy */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-GoogleAuthExample-GoogleAuthExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-GoogleAuthExample-GoogleAuthExampleTests.a */; };
+		729CCFCFFC2CE7A2C8A69B68 /* libPods-GoogleAuthExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4F97849358AAC025548C5A /* libPods-GoogleAuthExample.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -38,15 +38,15 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GoogleAuthExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GoogleAuthExample/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = GoogleAuthExample/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-GoogleAuthExample-GoogleAuthExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleAuthExample-GoogleAuthExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBBD6202B7140534D116DCC /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = GoogleAuthExample/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-GoogleAuthExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAuthExample.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-GoogleAuthExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAuthExample.release.xcconfig"; path = "Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-GoogleAuthExample-GoogleAuthExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAuthExample-GoogleAuthExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAuthExample-GoogleAuthExampleTests/Pods-GoogleAuthExample-GoogleAuthExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-GoogleAuthExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleAuthExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5F32D5917DCD3C18574D02 /* libPods-GoogleAuthExample-GoogleAuthExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleAuthExample-GoogleAuthExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1C5F270C610DF05B58E1B5 /* Pods-GoogleAuthExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAuthExample.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample.debug.xcconfig"; sourceTree = "<group>"; };
+		65CEE7626479A21ECC674B01 /* Pods-GoogleAuthExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAuthExample.release.xcconfig"; path = "Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GoogleAuthExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-GoogleAuthExample-GoogleAuthExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAuthExample-GoogleAuthExampleTests.release.xcconfig"; path = "Target Support Files/Pods-GoogleAuthExample-GoogleAuthExampleTests/Pods-GoogleAuthExample-GoogleAuthExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5A7F92C476D815A152EBC83 /* Pods-GoogleAuthExample-GoogleAuthExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAuthExample-GoogleAuthExampleTests.release.xcconfig"; path = "Target Support Files/Pods-GoogleAuthExample-GoogleAuthExampleTests/Pods-GoogleAuthExample-GoogleAuthExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3C167A377848F1FFEBD8EEE /* Pods-GoogleAuthExample-GoogleAuthExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAuthExample-GoogleAuthExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAuthExample-GoogleAuthExampleTests/Pods-GoogleAuthExample-GoogleAuthExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FA4F97849358AAC025548C5A /* libPods-GoogleAuthExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleAuthExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-GoogleAuthExample-GoogleAuthExampleTests.a in Frameworks */,
+				03833D7C2844F2B179BD7EAE /* libPods-GoogleAuthExample-GoogleAuthExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-GoogleAuthExample.a in Frameworks */,
+				729CCFCFFC2CE7A2C8A69B68 /* libPods-GoogleAuthExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-GoogleAuthExample.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-GoogleAuthExample-GoogleAuthExampleTests.a */,
+				FA4F97849358AAC025548C5A /* libPods-GoogleAuthExample.a */,
+				2C5F32D5917DCD3C18574D02 /* libPods-GoogleAuthExample-GoogleAuthExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,10 +145,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-GoogleAuthExample.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-GoogleAuthExample.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-GoogleAuthExample-GoogleAuthExampleTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-GoogleAuthExample-GoogleAuthExampleTests.release.xcconfig */,
+				5F1C5F270C610DF05B58E1B5 /* Pods-GoogleAuthExample.debug.xcconfig */,
+				65CEE7626479A21ECC674B01 /* Pods-GoogleAuthExample.release.xcconfig */,
+				E3C167A377848F1FFEBD8EEE /* Pods-GoogleAuthExample-GoogleAuthExampleTests.debug.xcconfig */,
+				A5A7F92C476D815A152EBC83 /* Pods-GoogleAuthExample-GoogleAuthExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -160,12 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GoogleAuthExampleTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				59DE1BA79AA1DD56F5F91F0D /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				CD8B8F33A49C854FA8A21C13 /* [CP] Embed Pods Frameworks */,
+				E8B075E1D6C30CD715AEF0A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,13 +181,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GoogleAuthExample" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				DBF5C1E22CB39E391B8337C9 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				A24E0077545A16A8A68D31DB /* [CP] Embed Pods Frameworks */,
+				AB4BCEDD1176E464353C0B3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,24 +271,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		59DE1BA79AA1DD56F5F91F0D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,7 +293,58 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		A24E0077545A16A8A68D31DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB4BCEDD1176E464353C0B3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD8B8F33A49C854FA8A21C13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample-GoogleAuthExampleTests/Pods-GoogleAuthExample-GoogleAuthExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample-GoogleAuthExampleTests/Pods-GoogleAuthExample-GoogleAuthExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample-GoogleAuthExampleTests/Pods-GoogleAuthExample-GoogleAuthExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF5C1E22CB39E391B8337C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -332,41 +366,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample-GoogleAuthExampleTests/Pods-GoogleAuthExample-GoogleAuthExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample-GoogleAuthExampleTests/Pods-GoogleAuthExample-GoogleAuthExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample-GoogleAuthExampleTests/Pods-GoogleAuthExample-GoogleAuthExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAuthExample/Pods-GoogleAuthExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		E8B075E1D6C30CD715AEF0A9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,7 +416,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-GoogleAuthExample-GoogleAuthExampleTests.debug.xcconfig */;
+			baseConfigurationReference = E3C167A377848F1FFEBD8EEE /* Pods-GoogleAuthExample-GoogleAuthExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -443,7 +443,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-GoogleAuthExample-GoogleAuthExampleTests.release.xcconfig */;
+			baseConfigurationReference = A5A7F92C476D815A152EBC83 /* Pods-GoogleAuthExample-GoogleAuthExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -467,7 +467,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-GoogleAuthExample.debug.xcconfig */;
+			baseConfigurationReference = 5F1C5F270C610DF05B58E1B5 /* Pods-GoogleAuthExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -496,7 +496,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-GoogleAuthExample.release.xcconfig */;
+			baseConfigurationReference = 65CEE7626479A21ECC674B01 /* Pods-GoogleAuthExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
