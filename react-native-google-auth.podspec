@@ -14,8 +14,15 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => min_ios_version_supported }
   s.source       = { :git => "https://github.com/GNUGradyn/react-native-google-auth.git", :tag => "#{s.version}" }
 
-  s.source_files = "ios/**/*.{h,m,mm,swift}"
+  s.source_files = "ios/**/*.{h,m,mm,swift}", "GoogleSignIn-iOS/GoogleSignIn/Sources/**/*.{h,m,mm,swift}", "GoogleSignIn-iOS/GoogleSignInSwift/Sources/**/*.{h,m,mm,swift}"
 
+  # dependencies for GoogleSignIn pod. will be replaced when the fork we use is merged into googles repo
+  s.dependency 'AppCheckCore', '>= 10.19.1', '< 11.0' do |ds|
+    ds.modular_headers = true
+  end
+  s.dependency 'AppAuth', '>= 1.7.3', '< 2.0'
+  s.dependency 'GTMAppAuth', '>= 4.1.1', '< 5.0'
+  s.dependency 'GTMSessionFetcher/Core', '~> 3.3'
 
   # Use install_modules_dependencies helper to install the dependencies if React Native version >=0.71.0.
   # See https://github.com/facebook/react-native/blob/febf6b7f33fdb4904669f99d795eba4c0f95d7bf/scripts/cocoapods/new_architecture.rb#L79.

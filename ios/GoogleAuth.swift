@@ -16,7 +16,7 @@ class GoogleAuth: NSObject {
         
         let signInConfig = GIDConfiguration(clientID: clientID, serverClientID: nil, hostedDomain: hostedDomainFilter, openIDRealm: nil)
         GIDSignIn.sharedInstance.configuration = signInConfig
-        GIDSignIn.sharedInstance.signIn(withPresenting: presentingVC, hint: nil, additionalScopes: nil, nonce: nonce)
+        GIDSignIn.sharedInstance.signIn(withPresenting: presentingVC, hint: nil, additionalScopes: nil, nonce: <#T##String?#>)
     }
     
     private func getCurrentViewController() -> UIViewController? {
