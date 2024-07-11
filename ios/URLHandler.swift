@@ -7,6 +7,7 @@
 
 import Foundation
 import React
+import GoogleSignIn
 
 @objc(UrlHandler)
 class UrlHandler: NSObject, RCTBridgeModule {

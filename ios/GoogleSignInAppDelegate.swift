@@ -7,7 +7,6 @@
 import Foundation
 import UIKit
 
-
 @objc(GoogleSignInAppDelegate)
 public class GoogleSignInAppDelegate: NSObject {
   
