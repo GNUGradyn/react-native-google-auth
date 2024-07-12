@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.source_files = "GoogleSignIn-iOS/GoogleSignIn/Sources/**/*.{h,m,mm,swift}"
   s.public_header_files = "GoogleSignIn-iOS/GoogleSignIn/Sources/Public/GoogleSignIn/*.h"
-  s.private_header_files = "GoogleSignIn-iOS/GoogleSignIn/Sources/Private/**/*.h"
+  s.private_header_files = "GoogleSignIn-iOS/GoogleSignIn/Sources/**/*.h"
 
   s.pod_target_xcconfig = {
     'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(SRCROOT)/GoogleSignIn-iOS/GoogleSignIn/Sources/Public/GoogleSignIn" "$(SRCROOT)/GoogleSignIn-iOS/GoogleSignIn/Sources"'
