@@ -13,18 +13,6 @@ Pod::Spec.new do |s|
 
   s.platforms    = { :ios => "10.0" }
   s.source       = { :git => "https://github.com/GNUGradyn/react-native-google-auth.git" }
-
-  s.source_files = "GoogleSignIn-iOS/GoogleSignIn/Sources/**/*.{h,m,mm,swift}"
-  s.public_header_files = "GoogleSignIn-iOS/GoogleSignIn/Sources/Public/GoogleSignIn/*.h"
-  s.private_header_files = "GoogleSignIn-iOS/GoogleSignIn/Sources/**/*.h"
-
-  s.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(SRCROOT)/GoogleSignIn-iOS/GoogleSignIn/Sources/Public/GoogleSignIn" "$(SRCROOT)/GoogleSignIn-iOS/GoogleSignIn/Sources"'
-  }
-
-  s.user_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(SRCROOT)/GoogleSignIn-iOS/GoogleSignIn/Sources/Public/GoogleSignIn" "$(SRCROOT)/GoogleSignIn-iOS/GoogleSignIn/Sources"'
-  }
   # Use install_modules_dependencies helper to install the dependencies if React Native version >=0.71.0.
   # See https://github.com/facebook/react-native/blob/febf6b7f33fdb4904669f99d795eba4c0f95d7bf/scripts/cocoapods/new_architecture.rb#L79.
   if respond_to?(:install_modules_dependencies, true)
