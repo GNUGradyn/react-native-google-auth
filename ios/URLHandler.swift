@@ -7,7 +7,6 @@
 
 import Foundation
 import React
-import GoogleSignIn
 
 @objc(UrlHandler)
 class UrlHandler: NSObject, RCTBridgeModule {
@@ -33,7 +32,7 @@ class UrlHandler: NSObject, RCTBridgeModule {
       "givenName": user.profile?.givenName ?? "",
       "familyName": user.profile?.familyName ?? "",
       "id": user.userID ?? "",
-      "idToken": user.idToken ?? ""
+      "idToken": user.idToken?.tokenString ?? ""
     ]
     
     do {

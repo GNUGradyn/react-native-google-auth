@@ -12,6 +12,8 @@
     "lib",
     "android",
     "ios",
+    "GoogleSignIn-iOS/GoogleSignIn/Sources",
+    "GoogleSignIn-iOS/LICENSE",
     "cpp",
     "*.podspec",
     "!ios/build",
